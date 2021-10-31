@@ -22,6 +22,9 @@
   "homepage": "https://github.com/brunnacroches/animation-text-scrolling#readme",
   "dependencies": {
     "gsap": "^3.8.0",
+    "imagesloaded": "^4.1.4",
+    "locomotive-scroll": "^4.1.3",
+    "splitting": "^1.0.6",
     "uui": "^1.0.7"
   },
   "devDependencies": {

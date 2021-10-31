@@ -1,0 +1,94 @@
+*, 
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  margin:0;
+  --color-text: #fff;
+  --color-bg: #080808;
+  --color-link: #666;
+  --color-link-hover: #fff;
+  --color-title: #fff;
+  --font-title: bennet-banner, serif;
+  --font-weight-title: 300;
+  --letter-spacing-title: -0.25vw;
+  --text-transform-title: uppercase;
+  --font-size-title: 9vw;
+  --font-size-title-min: 5rem;
+  --font-size-title-max: 7rem;
+	--letter-spacing-title: 0;
+	--text-transform-title: uppercase;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: maple-web, sans-serif;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+/* /* CARREGAMENTO DA PÁGINA */
+.js .loading::before,
+.js .loading::after {
+  content: '';
+  position: fixed;
+  z-index: 1000;
+}
+
+/* pag loading depois */
+.js .loading::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+} 
+
+
+/* Bola no meio da tela */
+.js .loading::after {
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  border-radius: 50%;
+  opacity: 0.4;
+  background: var(--color-link);
+  animation: loaderAnim 0,7 linear infinite alternate forwards;
+} 
+
+/* Animação */
+@keyframes loaderAnim {
+  to {
+    opacity: 1;
+    transform: scale3d(0.5, 0.5, 1);
+  }
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5, 0.5, 1);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+
+
+/*# sourceMappingURL=/base.98fd6c19.css.map */
