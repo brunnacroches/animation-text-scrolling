@@ -2,7 +2,9 @@
   "name": "animation-text-scrolling",
   "version": "1.0.0",
   "engines": {
-    "node": "17.3.0"
+    "node": "17.3.0",
+    "npm": "8.3.0"
+    
   },
   "scripts": {
     "dev": "npx parcel src/index.html --open",

@@ -1,7 +1,5 @@
 import {preloadImages, preloadFonts} from './utils';
 import LocomotiveScroll from 'locomotive-scroll';
-import "splitting/dist/splitting.css";
-import "splitting/dist/splitting-cells.css";
 import Splitting from "splitting";
 
 // initialize Splitting
