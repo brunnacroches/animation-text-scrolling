@@ -28,5 +28,8 @@
     "parcel": "^2.0.1",
     "splitting": "^1.0.6",
     "uui": "^1.0.7"
+  },
+  "devDependencies": {
+    "declarator": "^1.4.1"
   }
 }
