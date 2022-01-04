@@ -1,6 +1,8 @@
-import { preloadImages, preloadFonts } from './utils';
-import { LocomotiveScroll } from './locomotive';
-import { Splitting } from './splitting';
+import { preloadImages, preloadFonts } from './utils'
+
+import * as LocomotiveScroll from 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css';
+
+import * as Splitting from 'https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting-lite.min.js';
 
 // initialize Splitting
 const splitting = Splitting();
