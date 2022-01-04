@@ -501,9 +501,9 @@ Promise.all([
         scroll.cache = scroll.current;
         // translation value will be mapped in the interval of [-50,50] for a scroll distance of [150,-150]
         const transformVal = {
-            translateY: _utils.map(distance, 150, -150, -90, 90),
-            rotate: _utils.map(distance, 150, -150, -15, 15),
-            scale: _utils.map(Math.abs(distance), 0, 50, 1, 0.5)
+            translateY: map(distance, 150, -150, -90, 90),
+            rotate: map(distance, 150, -150, -15, 15),
+            scale: map(Math.abs(distance), 0, 50, 1, 0.5)
         };
         // for every word from the splitting object...
         for (const [_, word] of splitting.entries()){
@@ -519,7 +519,7 @@ Promise.all([
         // also rotate the images...
         for (const key of Object.keys(obj.currentElements))if (obj.currentElements[key].el.classList.contains('content__img')) {
             let progress = obj.currentElements[key].progress;
-            const rotate = _utils.map(progress, 0, 1, -5, 5);
+            const rotate = map(progress, 0, 1, -5, 5);
             obj.currentElements[key].el.style.transform = `rotate3d(0,0,1,${rotate}deg)`;
         }
     });
