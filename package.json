@@ -12,6 +12,7 @@
     "build:parcel": "npx parcel build src/index.html",
     "build": "npm run clean && npm run build:parcel"
   },
+  
   "repository": {
     "type": "git",
     "url": "https://github.com/brunnacroches/animation-text-scrolling.git"
