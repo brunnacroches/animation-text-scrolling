@@ -27,9 +27,7 @@
     "node-gyp-build": "^4.3.0",
     "splitting": "^1.0.6",
     "utils": "^0.3.1",
-    "uui": "^1.0.7"
-  },
-  "devDependencies": {
+    "uui": "^1.0.7",
     "parcel": "^2.0.1"
   }
 }
