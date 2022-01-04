@@ -1,6 +1,6 @@
 import { preloadImages, preloadFonts } from './utils';
-import  LocomotiveScroll from 'locomotiveScroll';
-import  Splitting  from 'split2';
+import { LocomotiveScroll } from 'locomotiveScroll';
+import { Splitting } from 'split2';
 
 // initialize Splitting
 const splitting = Splitting();
