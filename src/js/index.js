@@ -1,18 +1,18 @@
 import { preloadImages, preloadFonts } from './utils';
-import { LocomotiveScroll } from 'locomotiveScroll';
+import { LocomotiveScroll } from './locomotive';
 import { Splitting } from 'split2';
 
 // initialize Splitting
 const splitting = Splitting();
 
 // initialize Locomotive Scroll
-const lscroll = new LocomotiveScroll({
+const LocomotiveScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     smartphone: {smooth: true},
     tablet: {smooth: true}
-});
-
+  });
+  
 // Preload images and fonts
 Promise.all([preloadImages(), preloadFonts('mmi7prs')]).then(() => {
     // Remove loader (loading class)
