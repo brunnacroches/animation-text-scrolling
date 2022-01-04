@@ -20,12 +20,12 @@ Promise.all([preloadImages(), preloadFonts('mmi7prs')]).then(() => {
     // Remove loader (loading class)
     document.body.classList.remove('loading');
     // update locomotive scroll
-    lscroll.update();
+    scroll.update();
     // keep track of the previous and current scroll values
     let scroll = {cache: 0, current: 0};
 
     // Locomotive Scroll event
-    lscroll.on('scroll', obj => {
+    scroll.on('scroll', obj => {
         scroll.current = obj.scroll.y;
         const distance = scroll.current - scroll.cache;
         scroll.cache = scroll.current;
