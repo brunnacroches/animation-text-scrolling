@@ -9,7 +9,7 @@
     "dev": "npx parcel src/index.html --open",
     "start": "node server.js",
     "clean": "rm -rf dist/*",
-    "build:parcel": "npx parcel build src/index.html --no-optimize",
+    "build:parcel": "npx parcel build src/index.html",
     "build": "npm run clean && npm run build:parcel"
   },
   "repository": {
